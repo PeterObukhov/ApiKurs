@@ -12,7 +12,7 @@ namespace ApiKurs
 {
     internal class Api : IJob
     {
-        private static readonly string url = "http://dev.virtualearth.net/REST/v1/Routes?wayPoint.1={start}&wayPoint.2={end}&optimize=timeWithTraffic&routeAttributes=routeSummariesOnly&key=AilQsGyFGIOyYAks2zcgnMH_7LKPWAlikHfNgouhNBuJAatAgxZmh_ImOKANKPs0";
+        private static readonly string url = "http://dev.virtualearth.net/REST/v1/Routes?wayPoint.1={start}&wayPoint.2={end}&optimize=timeWithTraffic&routeAttributes=routeSummariesOnly&key={token}";
         private static readonly HttpClient client = new HttpClient();
         private static string tempUrl { get; set; }
         private static IScheduler scheduler { get; set; }
